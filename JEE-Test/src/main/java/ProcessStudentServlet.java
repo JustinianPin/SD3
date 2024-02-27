@@ -1,4 +1,6 @@
 import beans.StudentBean;
+import com.fasterxml.jackson.core.Version;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -24,7 +26,21 @@ procesarea datelor - calcularea anului nasterii
         int anNastere = anCurent - varsta;
 
 
+        // initializare serializator Jackson
+        XmlMapper mapper = new XmlMapper();
+        // VERIFIC VERSIUNEA DE JACKSON
+        //Version version = mapper.version();
+        //System.out.println("Version de Jackson: " + version);
 
+
+        // creare bean si populare cu date
+        StudentBean bean = new StudentBean();
+        bean.setNume(nume);
+        bean.setPrenume(prenume);
+        bean.setVarsta(varsta);
+
+        // serializare bean sub forma de string XML
+        mapper.writeValue(new File("/home/justinian/JEE-Test/student.xml"), bean);
 
 // se trimit datele primite si anul nasterii catre o alta pagina JSP pentru afisare
         request.setAttribute("nume", nume);

@@ -28,11 +28,15 @@
                              property="varsta"/>
         </li>
 
-        <li>Anul nasterii: <%=
-        request.getAttribute("anNastere") %>
-        </li>
-        <!-- anul nasterii nu face parte din bean, il afisam separat (daca
-exista) -->
+        <!-- anul nasterii nu face parte din bean, il afisam separat (daca exista) -->
+        <li>Anul nasterii: <%
+            Object anNastere = request.getAttribute("anNastere");
+            if (anNastere != null) {
+                out.print(anNastere);
+            } else {
+                out.print("necunoscut");
+            }
+        %></li>
 
     </ul>
     </body>

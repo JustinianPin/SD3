@@ -13,7 +13,10 @@
     <servlet-name>ProcessStudent</servlet-name>
     <servlet-class>ProcessStudentServlet</servlet-class>
   </servlet>
-
+  <servlet>
+    <servlet-name>ReadStudent</servlet-name>
+    <servlet-class>ReadStudentServlet</servlet-class>
+  </servlet>
 
 
   <servlet-mapping>
@@ -24,7 +27,10 @@
     <servlet-name>ProcessStudent</servlet-name>
     <url-pattern>/process-student</url-pattern>
   </servlet-mapping>
-
+  <servlet-mapping>
+    <servlet-name>ReadStudent</servlet-name>
+    <url-pattern>/read-student</url-pattern>
+  </servlet-mapping>
 
 
 </web-app>
