@@ -14,15 +14,39 @@
     <servlet-name>ProcessStudent</servlet-name>
     <servlet-class>ProcessStudentServlet</servlet-class>
   </servlet>
-
+  <servlet>
+    <servlet-name>ReadStudent</servlet-name>
+    <servlet-class>ReadStudentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteStudent</servlet-name>
+    <servlet-class>DeleteStudentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateStudent</servlet-name>
+    <servlet-class>UpdateStudentServlet</servlet-class>
+  </servlet>
 
   <!-- servlet-mappings-->
   <servlet-mapping>
     <servlet-name>Hello</servlet-name>
-    <url-pattern>/hello</url-pattern>
+    <url-pattern>/hello</url-pattern>  <!-- vezi ca astea sunt linkurile adevarate, nu cele cu .jsp-->
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>ProcessStudent</servlet-name>
     <url-pattern>/process-student</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReadStudent</servlet-name>
+    <url-pattern>/read-student</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteStudent</servlet-name>
+    <url-pattern>/delete-student</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateStudent</servlet-name>
+    <url-pattern>/update-student</url-pattern>
+  </servlet-mapping>
+
 </web-app>

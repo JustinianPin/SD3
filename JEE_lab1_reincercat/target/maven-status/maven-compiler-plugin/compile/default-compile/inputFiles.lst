@@ -1,3 +1,6 @@
 /home/justinian/JEE_lab1_reincercat/src/main/java/beans/StudentBean.java
+/home/justinian/JEE_lab1_reincercat/src/main/java/UpdateStudentServlet.java
+/home/justinian/JEE_lab1_reincercat/src/main/java/DeleteStudentServlet.java
+/home/justinian/JEE_lab1_reincercat/src/main/java/ReadStudentServlet.java
 /home/justinian/JEE_lab1_reincercat/src/main/java/HelloServlet.java
 /home/justinian/JEE_lab1_reincercat/src/main/java/ProcessStudentServlet.java

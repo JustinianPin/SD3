@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
     </head>
     <body>
+    <!--
+    In continuare, veţi crea un formular web ce acceptă câteva date despre un student, le
+trimite unui servlet spre „procesare”, iar servlet-ul le încapsulează într-un JavaBean şi le
+afişează într-o pagină JSP (stilul Model-View-Controller).
+    -->
     <h3>Formular student</h3>
     Introduceti datele despre student:
     <form action="./process-student" method="post">
